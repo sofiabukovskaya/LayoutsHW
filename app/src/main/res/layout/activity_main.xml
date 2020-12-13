@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.myapplication.views.CustomView
+        android:layout_marginTop="200dp"
+        android:layout_width= "match_parent"
+        android:layout_height="350dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textid"
+            android:layout_width="210dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:background="@color/white"
+            android:text="Hello! I am text"
+            android:textAlignment="center"
+            android:textSize="36dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="205dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/mid_35953_652691"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonId"
+        android:layout_width="205dp"
+        android:layout_height="200dp"
+        android:text="Hello I am button, click me!!"
+        android:onClick="clickToast"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="202dp"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        android:onClick="goToConstraitLayout"/>
+
+</RelativeLayout>
